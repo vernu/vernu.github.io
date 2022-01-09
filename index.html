@@ -93,6 +93,10 @@
         </div>
       </div>
     </div>
-    <p id="copy">&copy; 2021</p>
+    <p id="copy">&copy; <span id="yr"></span></p>
+    <script>
+      const node = document.getElementById('yr')
+      node.innerText = (new Date()).getFullYear()
+    </script>
   </body>
 </html>
